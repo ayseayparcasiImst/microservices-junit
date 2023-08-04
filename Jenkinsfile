@@ -12,7 +12,7 @@ pipeline {
                 sh 'mvn --version'
             }
         }
-	           stage('Test') {
+	stage('Test') {
             steps {
                 sh 'chmod +r pom.xml'
                 sh 'chmod +r .mvn'
@@ -28,12 +28,13 @@ pipeline {
                     junit '**/target/surefire-reports/TEST-*.xml'
                 }
             }
-			   
+	}		   
           stage('docker-compose-microservices') {
            	steps {
               	   sh "docker compose up -d"
            }
        	   }
+
 
 }
 }
