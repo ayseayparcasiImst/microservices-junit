@@ -31,7 +31,7 @@ public class CurrencyConversionSampleController {
         ResponseEntity<CurrencyConversionSampleBean>
             responseEntity
             = new RestTemplate().getForEntity(///currency-exchange
-                "http://currency-exchange:8000/currency-exchange-sample/fromCurrency/{fromCurrency}/toCurrency/{toCurrency}",
+                "http://localhost:8000/currency-exchange-sample/fromCurrency/{fromCurrency}/toCurrency/{toCurrency}",
                 CurrencyConversionSampleBean.class,
                 uriVariables);
         CurrencyConversionSampleBean response

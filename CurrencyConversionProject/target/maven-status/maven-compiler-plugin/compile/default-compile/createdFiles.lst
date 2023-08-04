@@ -1,1 +1,7 @@
+com\imst\event\map\test\model\Result.class
+com\imst\event\map\test\CurrencyConversionSampleController.class
+com\imst\event\map\test\CurrencyConversionSampleServiceApplication.class
+com\imst\event\map\test\service\AddService.class
+com\imst\event\map\test\AddController.class
 com\imst\event\map\test\ServletInitializer.class
+com\imst\event\map\test\CurrencyConversionSampleBean.class
